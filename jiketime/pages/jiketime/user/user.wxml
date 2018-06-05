@@ -1,0 +1,50 @@
+<view class="main">
+    <view class="header">
+        <navigator url="../bindnum/bindnum" hover-class="navigator-hover">
+        <view  bindtap="bindViewTap" class="userinfo">
+            <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+            <open-data type="userNickName" class="userinfo-nickname" lang="zh_CN"></open-data>
+            <text class="user-motto">新用户绑定手机号后可享受30元礼券></text>
+        </view>
+        </navigator>
+    </view>
+    <view class="weui-cells info">
+        <navigator url="../users/buy/buy" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image src="../img/buy.png" class="buy"></image>
+            </view>
+            <view class="weui-cell__bd">已购</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">0</view>
+        </navigator>
+        <navigator url="../users/ticket/ticket" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image src="../img/ticket.png" class="ticket"></image>
+            </view>
+            <view class="weui-cell__bd">礼券</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">1</view>
+        </navigator>
+        <navigator url="../users/gift/gift" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image src="../img/gift.png" class="gift"></image>
+            </view>
+            <view class="weui-cell__bd">分享有赏</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+    </view>
+    <view class="weui-cells hobby">
+        <navigator url="../users/mesg/mesg" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image src="../img/mesg.png" class="mesg"></image>
+            </view>
+            <view class="weui-cell__bd">我的留言</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">0</view>
+        </navigator>
+        <navigator url="../users/collection/collection" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <view class="weui-cell__hd">
+                <image src="../img/collection.png" class="collection"></image>
+            </view>
+            <view class="weui-cell__bd">我的收藏</view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">0</view>
+        </navigator>
+    </view>
+</view>

@@ -1,0 +1,47 @@
+page {
+    background-color: #EEECF7;
+}
+.header {
+    width: 100%;
+    height: 330rpx;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+}
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50rpx;    
+    overflow: hidden;
+}
+.userinfo-avatar {
+    width: 120rpx;
+    height: 120rpx;
+    margin: 10rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.userinfo-nickname {
+    color: #aaa;
+}
+.user-motto {
+    width: 100%;
+    font-family: serif;
+    font-size: 30rpx;
+    color:#2E4DF3;
+    text-align: center;
+    margin-top: 20rpx;
+}
+.weui-cell info {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.weui-cell__hd image {
+    margin-right: 20rpx;
+    vertical-align: middle;
+    width:50rpx;
+    height: 50rpx;
+}

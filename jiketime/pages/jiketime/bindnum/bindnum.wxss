@@ -1,0 +1,19 @@
+page {
+    background-color: #EEECF7;
+}
+.main {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+}
+.weui-cell {
+    width: 100%;
+    /* display: block; */
+    /* margin: 0 auto; */
+    overflow: hidden;
+}
+.weui-cell .weui-cell__bd {
+    
+}
+
