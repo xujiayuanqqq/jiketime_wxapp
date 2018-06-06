@@ -8,12 +8,34 @@ page {
     background-color: #fff;
 }
 .weui-cell {
+    position: relative;
     width: 100%;
-    /* display: block; */
-    /* margin: 0 auto; */
-    overflow: hidden;
+    height: 50rpx;
 }
-.weui-cell .weui-cell__bd {
-    
+.weui-cell .weui-cell__hd .weui-label {
+    font-size: 35rpx;
+}
+input {
+    font-size: 35rpx;
+}
+.weui-cell .weui-cell__ft {
+    overflow: hidden;
+    margin-right: 15rpx;
+}
+.weui-cell .weui-cell__ft .weui-vcode-btn{
+    color: #F8540A;
+    font-size: 35rpx;
+}
+.button {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 90rpx;
+    font-size: 35rpx;
+    color: #F8540A;
+    text-align: center;
+    margin-top: 60rpx;
+    display: inline-block;
+    line-height: 2.58823529em;
 }
 
