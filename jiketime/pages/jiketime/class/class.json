@@ -1,1 +1,7 @@
-{}
+{
+    "navigationBarBackgroundColor": "#fff",    
+    "navigationBarTitleText": "极客时间" ,
+    "navigationBarTextStyle": "black" ,
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true    
+}
