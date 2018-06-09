@@ -1,0 +1,244 @@
+page {
+    background-color: #EEECF7;
+}
+.swiper-tab {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: inline-block;
+}
+.swiper-tab_item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+.swiper-tab-item {
+    color: #f65959;
+    margin-left: 345rpx;
+}
+.total {
+    color: #434343; 
+}
+.active {
+    padding-right: 0;
+    color: #f65959;
+}
+swiper {
+    text-align: center;
+    width: 100%;
+    height: 900rpx;
+    padding-top: 100rpx; 
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.pg {
+    width: 80%;
+    height: 880rpx;
+    vertical-align: middle;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 15rpx;
+    overflow: hidden;
+}
+.pg_img {
+    width: 100%;
+    height: 380rpx;
+    padding-top: 50rpx;
+}
+.pg_img image {
+    width: 300rpx;
+    height: 100%;
+    border-radius: 50rpx;
+}
+.pg_hd {
+    width: 100%;
+    height: 40rpx;
+    padding-top: 10rpx;
+}
+.pg_hd .title {
+    font-size: 40rpx;
+    font-weight: 600;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.pg_bd {
+    width: 100%;
+    height: 80rpx;
+    padding-top: 30rpx;
+    display: flex;
+    overflow: hidden;
+}
+.pg_bd .instr {
+    width: 30%;
+    font-size: 30rpx;
+    color: #A5A3A3;
+    padding-left: 40rpx;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.pg_bd .content {
+    width: 70%;
+    font-size: 30rpx;
+    color: #A5A3A3;
+    padding-right: 30rpx;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.pg_price {
+    width: 100%;
+    height: 120rpx;
+}
+.pg_price .original_price {
+    font-size: 30rpx;
+    color: #f65959;
+    height: 48rpx;
+    text-decoration: line-through;
+}
+.pg_price .button {
+    font-size: 35rpx;
+    color: #fff;
+    width: 50%;
+    height: 60rpx;
+    display: block;
+    margin: 0 auto;
+    background-color: #F7650F;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    border-radius: 8rpx;
+    padding-top: 3rpx;
+    margin-top: 10rpx;
+}
+.pg_ft {
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    bottom: 45rpx;
+}
+.pg_ft .user {
+    width: 44rpx;
+    height: 44rpx;
+    margin-top: 28rpx;
+    margin-left: 163rpx;
+}
+.pg_ft .learn {
+    font-size: 30rpx;
+    color: #A5A3A3;    
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 28rpx; 
+    margin-left: 10rpx;       
+}
+.pg_imgteacher {
+   width: 100%;
+   height: 95%;
+   display: flex;
+   z-index: 1;   
+   /* background-color: #000; */
+}
+.pg_imgteacher .pic {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 360rpx 60rpx;
+    border-bottom-right-radius: 360rpx 60rpx;
+}
+.pg_teacher {
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    overflow: hidden;
+    margin-top: -16rpx;
+}
+
+.pg_teacher .user {
+    width: 44rpx;
+    height: 44rpx;
+    margin-left: 163rpx;
+}
+.pg_teacher .learn {
+    font-size: 30rpx;
+    color: #A5A3A3; 
+    margin-left: 10rpx;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pg_image {
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+    /* background-color: #000; */
+}
+.pg_image .pic {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 900rpx 300rpx;
+    border-bottom-right-radius: 900rpx 300rpx;
+}
+.pg_head {
+    width: 100%;
+    height: 100rpx;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10rpx;
+}
+.pg_head .name {
+    font-size: 30rpx;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;    
+}
+.pg_head .introduce {
+    font-size: 26rpx;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #A5A3A3;
+    font-weight: normal;
+}
+.delimiter {
+    width: 78rpx;
+    height: 8rpx;
+    display: block;
+    margin: 0 auto;
+    background-color: #F7650F;
+    border-radius: 4rpx;
+    margin-top: 50rpx;
+}
+.pg_body {
+    width: 100%;
+    height: 100rpx;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30rpx;
+}
+.pg_body .instr {
+    font-size: 38rpx;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600; 
+}
+.pg_body .content {
+    font-size: 26rpx;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #A5A3A3;
+    font-weight: normal;
+    margin-top: 10rpx;
+}
+.pg_pr {
+    width: 100%;
+    height: 40rpx;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+.pg_pr .price {
+    font-size: 33rpx;
+    color: #F7650F;
+}
+
+
+
