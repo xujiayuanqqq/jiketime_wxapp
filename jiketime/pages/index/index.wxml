@@ -1,11 +1,11 @@
 <view class="container">
     <view class="swiper-tab">
         <view class="swiper-tab_item">
-            <view class="swiper-tab-item {{currentTab == index?'active':''}}" data-current="{{index}}" bindtap="clickTab">1</view>
+            <view class="swiper-tab-item {{currentTab == index?'active':''}}" data-current="{{index}}">{{num}}</view>
             <view class="total">/8</view>
         </view>
     </view>
-    <swiper current="{{currentTab}}" bindchange="{{swiperTab}}" duration="2000">
+    <swiper current="{{currentTab}}" bindchange="swiperTab" duration="2000">
 
         <swiper-item>
             <view class="pg">
@@ -16,8 +16,7 @@
                     <view class="title">架构师</view>
                 </view>
                 <view class="pg_bd">
-                    <view class="instr">本期看点：</view>
-                    <view class="content">Spring Boot 2.0 新特性解读</view>
+                    <view class="instr">本期看点：Spring Boot 2.0 新特性解读</view>
                 </view>
                 <view class="pg_price">
                     <view class="original_price">原价：￥9.9</view>
@@ -39,8 +38,7 @@
                     <view class="title">架构师</view>
                 </view>
                 <view class="pg_bd">
-                    <view class="instr">本期看点：</view>
-                    <view class="content">微服务架构技术栈选型</view>
+                    <view class="instr">本期看点：微服务架构技术栈选型</view>
                 </view>
                 <view class="pg_price">
                     <view class="original_price">原价：￥9.9</view>

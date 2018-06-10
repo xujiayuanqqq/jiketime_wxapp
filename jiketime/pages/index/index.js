@@ -5,15 +5,14 @@ const app = getApp()
 Page({
   data: {
     currentTab: 0,
+    num: 1
   },
-  // bindViewTap: function() {
-  //   wx.navigateTo({
-
-  //   })
-  // },
-  swiperTab: function() {
+  swiperTab: function(e) {
+    // console.log(e);
+    let number = e.detail.current + 1;    
     this.setData({
       currentTab: e.detail.current,
-    })
+      num: number
+    });
   }
 })
