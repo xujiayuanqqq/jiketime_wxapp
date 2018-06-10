@@ -1,2 +1,20 @@
-<!--pages/jiketime/users/ticket/ticket.wxml-->
-<text>pages/jiketime/users/ticket/ticket.wxml</text>
+<view class="container">
+    <view class="voucher">
+        <view class="left">
+            <view class="voucher_sort">新人专享礼券</view>
+            <view class="voucher_detail">线虚拟商品，满30元可用，不可与其他优惠叠加使用.</view>
+            <view class="voucher_date">使用事件 2018.06.05-2018.06.19</view>
+        </view>
+        <view class="right">
+            <view class="price">￥30</view>
+        </view>
+    </view>
+    <navigator url="../rule/rule" class="goto">
+        <view class="rule">
+            <view class="use_rule">使用规则 </view>
+            <view class="block">
+                <image class="go" src="../../img/arrow.png"></image>
+            </view>
+        </view>
+    </navigator>
+</view>

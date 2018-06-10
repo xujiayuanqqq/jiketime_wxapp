@@ -1,1 +1,75 @@
-/* pages/jiketime/users/ticket/ticket.wxss */
+page {
+    background-color: #EEECF7;
+}
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+.voucher {
+    width: 90%;
+    height: 280rpx;
+    display: block;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+    border-left: 10rpx solid #FBC375;
+    box-shadow: lightgrey 5rpx 5rpx 5rpx 5rpx;
+}
+.left {
+    height: 100%;
+    width: 80%;
+    display: block;
+    overflow: hidden;
+    margin-left: 30rpx;
+}
+.voucher_sort {
+    font-size: 32rpx;
+    color: #5D5D5D;
+    margin-top: 40rpx;
+}
+.voucher_detail {
+    font-size: 26rpx;
+    color: #A39F9F;
+    margin-top: 10rpx;
+}
+.voucher_date {
+    font-size: 26rpx;
+    color: #A39F9F;
+    margin-top: 10rpx;
+}
+.right {
+    height: 100%;
+    width: 20%;
+}
+.price {
+    font-size: 50rpx;
+    color: #FBA123;
+    margin-top: 20rpx;
+}
+.goto {
+    width: 100%;
+    height: 100rpx;
+    margin-top: 50rpx;
+    background-color: #EEECF7;    
+}
+.rule {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.use_rule {
+    height: 100%;
+    font-size: 30rpx;
+    color: #A39F9F;
+    padding-left: 300rpx;
+}
+.block {
+    height: 100%;
+    margin-left: 0;
+}
+.go {
+    width: 40rpx;
+    height: 40rpx;
+}
