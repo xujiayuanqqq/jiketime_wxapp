@@ -1,2 +1,24 @@
-<!--pages/jiketime/users/buy/buy.wxml-->
-<text>pages/jiketime/users/buy/buy.wxml</text>
+<view class="container">
+    <view class="purchased_item">
+        <view class="list_top">
+            <view class="list_left">
+                <view class="list_up">
+                    <view class="list_avatar">
+                        <image class="avatar" src="../../img/avatar1.png"></image>
+                    </view>
+                    <view class="list_content">
+                        <view class="list_info">InfoQ</view>
+                        <view class="list_intr">InfoQ 编辑部</view>
+                    </view>
+                </view>
+                <view class="list_under">
+                    <view class="list_pro">架构师</view>
+                    <view class="list_detail">本期看点：微服务架构技术栈选型</view>
+                </view>
+            </view>
+            <view class="list_right">
+                <image src="../../img/architect.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,1 +1,5 @@
-{}
+{
+    "navigationBarBackgroundColor": "#fff",    
+    "navigationBarTitleText": "已购" ,
+    "navigationBarTextStyle": "black"  
+}

@@ -1,1 +1,82 @@
-/* pages/jiketime/users/buy/buy.wxss */
+page {
+    background-color: #EEECF7;
+}
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+.purchased_item {
+    width: 100%;
+    height: 260rpx;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+.list_top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.list_left {
+    width: 65%;
+    height: 100%;
+    margin-left: 20rpx;
+}
+.list_up {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    border-bottom: 0.3px solid #ECECEC;
+}
+.list_avatar {
+    height: 80rpx;
+    width: 20%;
+    margin-top: 30rpx;
+}
+.avatar {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    border: 1rpx solid #F7650F;
+}
+.list_content {
+    height: 100%;
+    width: 80%;
+    display: block;
+    overflow: hidden;
+    margin-left: 15rpx;
+}
+.list_info {
+    margin-top: 30rpx;
+    font-size: 28rpx;
+}
+.list_intr {
+    font-size: 26rpx;
+    color: #A39F9F;
+}
+.list_under {
+    width: 100%;
+    height: 50%;
+    display: block;
+    overflow: hidden;
+}
+.list_pro {
+    font-size: 30rpx;
+    margin-top: 20rpx;
+}
+.list_detail {
+    font-size: 26rpx;
+    color: #A39F9F;
+}
+.list_right {
+    width: 45%;
+    height: 100%;
+    overflow: hidden;
+}
+.list_right image {
+    width: 200rpx;
+    height: 200rpx;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30rpx;
+}
