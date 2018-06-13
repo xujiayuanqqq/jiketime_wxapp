@@ -1,0 +1,68 @@
+<view class="container">
+    <view class="head_video">
+        <video class="dplayer-video dplayer-video-current" src="blob:https://time.geekbang.org/229665d9-c2fe-4866-8345-11c8057fcece"></video>
+    </view>
+    <view class="class_intr">
+        <view class="up">
+            <text class="class_name">零基础学Python</text>
+            <text class="class_buy">3586人购买</text>
+        </view>
+        <view class="under">
+            <image class="play" src="../../img/play.png"></image>
+            <text class="class_lesson">视频课程</text>
+            <text class="class_date">每周上新</text>
+        </view>
+    </view>
+    <view class="class-tab-box ">
+        <view class="class-tab-block ">
+            <view class="class-tab-nav {{currentTab==0 ? 'on': ''}} " data-index="0" bindtap="clickTab">课程信息</view>
+            <view class="class-tab-nav {{currentTab==1 ? 'on': ''}} " data-index="1 " bindtap="clickTab">课程目录</view>
+        </view>
+        <view class="class-content " wx:if='{{currentTab == 0}}'>
+            <view class="author_info">
+                <text class="title">课程讲师</text>
+                <view class="author_person">
+                    <view class="author_avatar">
+                        <image class="avatar" src="../../img/author.jpg"></image>
+                    </view>
+                    <view class="right">
+                        <view class="author_name">尹会生</view>
+                        <view class="author_pro">金山软件西山居技术经理</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="class-content " wx:if='{{currentTab == 1}}'>
+            <view class="video_play" wx:for="{{courseCatalog}}" wx:key="{{item.id}}">
+                <image class="video_play_icon" src="../../img/play1.png"></image>
+                <view class="lesson_name">{{item.num}} | {{item.chapter}}</view>
+                <view class="watch">试看</view>
+            </view>
+            <!-- <view class="video_play">
+                <image class="video_play_icon" src="../../img/play1.png"></image>
+                <view class="lesson_name">01 | Python语言的特点</view>
+                <view class="watch">试看</view>
+            </view> -->
+        </view>
+    </view>
+    <view class="bottom ">
+        <view class="drop_down_item">
+            <image class="share" src="../../img/share.png" bindtap="actionSheetTap"></image>
+            <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+                <block wx:for-items="{{actionSheetItems}}">
+                    <action-sheet-item bindtap="bind{{item.bindtap}}">{{item.txt}}</action-sheet-item>
+                </block>
+                <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+            </action-sheet>
+        </view>
+        <view class="bottom-wrapper">
+            <view class="bottom-left-box">
+                <text class="subscribe">￥129 <text class="group">3人成团</text>
+                </text>
+            </view>
+            <view class="bottom-right-box">
+                <text class="origin_price">加入学习￥199</text>
+            </view>
+        </view>
+    </view>
+</view>
