@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="content">
+        <view class="item_title">礼券使用规则</view>
+        <view class="item_body">
+            <view class="item">1.每个订单只能使用一张礼券；</view>
+            <view class="item">2.每张礼券只能使用一次，不可叠加使用；</view>
+            <view class="item">3.礼券如有品类、有效时间等限制，订单需满足相应条件后才能使用；</view>
+            <view class="item">4.如无特别说明，礼券不能与其他优惠券同享；</view>
+            <view class="item">5.未使用的礼券过期后将自动作废。</view>
+        </view>
+    </view>
+</view>

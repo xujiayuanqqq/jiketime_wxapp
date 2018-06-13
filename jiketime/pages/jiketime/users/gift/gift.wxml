@@ -1,2 +1,19 @@
-<!--pages/jiketime/users/gift/gift.wxml-->
-<text>pages/jiketime/users/gift/gift.wxml</text>
+<view class="container">
+    <view class="hash_head">
+        <view class="hash_left">
+            <view class="hash_reward">现金奖励</view>
+            <view class="hash_price">￥0.00</view>
+        </view>
+        <view class="hash_right">
+            <view class="hash_detail">明细</view>
+            <view class="hash_withdraw">提现</view>
+        </view>
+    </view>
+    <view class="hash_body">
+        <view class="content">无可分享内容</view>
+        <view class="condition">购买专栏或视频课程才能分享返现</view>
+    </view>
+    <view class="hash_ft">
+        <view class="hash_rule">分享有奖规则</view>
+    </view>
+</view>

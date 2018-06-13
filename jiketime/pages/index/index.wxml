@@ -2,10 +2,10 @@
     <view class="swiper-tab">
         <view class="swiper-tab_item">
             <view class="swiper-tab-item {{currentTab == index?'active':''}}" data-current="{{index}}">{{num}}</view>
-            <view class="total">/8</view>
+            <view class="total">/ 8</view>
         </view>
     </view>
-    <swiper current="{{currentTab}}" bindchange="swiperTab" duration="2000">
+    <swiper current="{{currentTab}}" bindchange="swiperTab" duration="1000">
 
         <swiper-item>
             <view class="pg">

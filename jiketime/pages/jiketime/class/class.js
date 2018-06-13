@@ -5,9 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    data: {
-      currentTab: 0
-    }
+    currentTab: 0
   },
   clickTab: function(e) {
     var index = e.currentTarget.dataset.index

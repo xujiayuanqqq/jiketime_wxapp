@@ -1,0 +1,44 @@
+<view class="container">
+    <view class="head_img">
+        <image class="learn" src="../../img/learn.jpg"></image>
+    </view>
+    <view class="column-main">
+        <view class="author">
+            <view class="author-avatar">
+                <image class="avatar" src="../../img/user1.jpg"></image>
+            </view>
+            <view class="author-info">
+                <view class="up">
+                    <text class="name">王天一</text>
+                    <text class="buy">2618人购买</text>
+                </view>
+                <view class="under">
+                    <text class="profession">工学博士，副教授</text>
+                </view>
+            </view>
+        </view>
+        <view class="class-tab-box">
+            <view class="class-tab-block">
+                <view class="class-tab-nav {{currentTab == 0?'on':''}}" data-index="0" bindtap="clickTab">专栏介绍</view>
+                <view class="class-tab-nav {{currentTab == 1?'on':''}}" data-index="1" bindtap="clickTab">专栏目录</view>
+            </view>
+            <view class="class-content" wx:if='{{currentTab == 0}}'>bvvbndmscs</view>
+            <view class="class-content" wx:if='{{currentTab == 1}}'>aabababbabba</view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view class="drop_down_item">
+            <image class="share" src="../../img/share.png" bindtap="actionSheetTap"></image>
+            <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+                <block wx:for-items="{{actionSheetItems}}">
+                    <action-sheet-item bindtap="bind{{item.bindtap}}">{{item.txt}}</action-sheet-item>
+                </block>
+                <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+            </action-sheet>
+        </view>
+        <view class="bottom-wrapper">
+            <text class="subscribe">限时￥45<text class="origin_price">￥68</text>
+            </text>
+        </view>
+    </view>
+</view>

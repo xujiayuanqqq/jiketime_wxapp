@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+.content {
+    width: 85%;
+    margin-left: 40rpx;
+    /* display: block;
+    margin: 0 auto;   */
+    margin-top: 50rpx;  
+}
+.item_title {
+    width: 100%;
+    font-size: 40rpx;
+    height: 60rpx;
+}
+.item_body {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin-top: 30rpx;
+}
+.item {
+    width: 100%;
+    font-size: 33rpx;
+    margin-top: 10rpx;
+}

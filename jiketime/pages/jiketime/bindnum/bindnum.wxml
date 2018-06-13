@@ -11,7 +11,7 @@
         <view class="weui-cell__hd">
            <view class="weui-label">验证码</view>
         </view>
-        <view class="weui-cell__bd">
+        <view class="weui-cell__bd num">
            <input class="weui-input" placeholder="请输入验证码" />
         </view>
         <view class="weui-cell__ft">
