@@ -65,16 +65,15 @@ page {
     overflow: hidden;
     display: flex;
 }
-.course_bd .course_bd_box {
-    width: 50rpx;
-    height: 50rpx;
-    margin-top: 25rpx;
-    overflow: hidden;   
+.course_bd_box {
+    width: 34rpx;
+    height: 34rpx;
+    margin-top: 30rpx;
+    padding-left: 20rpx;    
 }
-.course_bd .course_bd_box image {
-    width: 38rpx;
-    height: 38rpx;
-    padding-left: 10rpx;
+.course_bd_box .course_icon {
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -85,14 +84,14 @@ page {
     width: 330rpx;
     padding-left: 10rpx;
     vertical-align: center;
-    padding-top: 31rpx;
+    padding-top: 34rpx;
     color: #7d7d78;
     overflow: hidden;
 }
 .course_bd .course_detail:after {
     content: '';
     right: 0;
-    top: 37rpx;
+    top: 39rpx;
     height: 26rpx;
     width: 1rpx;
     background-color: #7d7d78;
@@ -105,19 +104,19 @@ page {
     display: flex;
 }
 .course {
-    font-size: 26rpx;
     height: 38rpx;
-    padding-top: 31rpx;
-    padding-left: 30rpx;
+    padding-top: 30rpx;
+    padding-left: 100rpx;
     overflow: hidden;
 }
 .course.course_price {
+    font-size: 30rpx;    
     color: #F94312;  
 }
 .course.course_period {
     font-size: 22rpx;
     padding-left: 0;
-    padding-top: 34rpx;
+    padding-top: 38rpx;
 
 }
 

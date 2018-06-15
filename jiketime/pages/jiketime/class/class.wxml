@@ -1,228 +1,78 @@
 <view class="main">
     <view class="course-tab-box">
         <view class="course-tab-block">
-        <view class="course-tab-nav {{currentTab == 0?'on':''}}" data-index="0" bindtap="clickTab">订阅专栏</view>
-        <view class="course-tab-nav {{currentTab == 1?'on':''}}" data-index="1" bindtap="clickTab">视频课程</view>
-        <view class="course-tab-nav {{currentTab == 2?'on':''}}" data-index="2" bindtap="clickTab">精品微课</view>
-    </view>
-
-        <view class="course-content" wx:if='{{currentTab == 0}}'>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
-                    <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
-                        </view>
-                        <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
-                        </view>
-                    </view>
-                </view>
-            </navigator>
+            <view class="course-tab-nav {{currentTab == 0?'on':''}}" data-index="0" bindtap="clickTab">
+                订阅专栏
+            </view>
+            <view class="course-tab-nav {{currentTab == 1?'on':''}}" data-index="1" bindtap="clickTab">
+                视频课程
+            </view>
+            <view class="course-tab-nav {{currentTab == 2?'on':''}}" data-index="2" bindtap="clickTab">
+                精品微课
+            </view>
         </view>
-
-         <view class="course-content" wx:if='{{currentTab == 1}}'>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
+        <view class="course-content" wx:if="{{currentTab == 0}}">
+            <view class="course_info" wx:for="{{chooseClass}}" wx:key="{{item.id}}">
+                <navigator url="../items/detail/detail" hover-class="none">
                     <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
+                        <image src="{{item.images}}"></image>
                     </view>
                     <view class="dat">
                         <view class="course_bd">
                             <view class="course_bd_box">
                                 <image class="course_icon" src="../img/head.png"></image>
                             </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
+                            <view class="course_detail">{{item.detail}}</view>
                         </view>
                         <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
+                            <view class="course course_price">{{item.price}}</view>
+                            <view class="course course_period">/{{item.period}}</view>
                         </view>
                     </view>
-                </view>
-            </navigator>
+                </navigator>
+            </view>
         </view>
-
-
-         <view class="course-content" wx:if='{{currentTab == 2}}'>
-            <navigator url="" hover-class="navigator-hover">
-                <view class="course_info">
+        <view class="course-content" wx:if="{{currentTab == 1}}">
+            <view class="course_info" wx:for="{{videoClass}}" wx:id="{{item.id}}">
+                <navigator url="../items/video/video" hover-class="none">
                     <view class="course_hd">
-                        <image src="../img/learn1.png"></image>
+                        <image src="{{item.images}}"></image>
                     </view>
                     <view class="dat">
                         <view class="course_bd">
                             <view class="course_bd_box">
                                 <image class="course_icon" src="../img/head.png"></image>
                             </view>
-                            <view class="course_detail">2277 人与你共同学习</view>                    
+                            <view class="course_detail">{{item.detail}}</view>
                         </view>
                         <view class="course_ft">
-                            <view class="course course_price">限时￥45</view>
-                            <view class="course course_period">/40期</view>
+                            <view class="course course_price">{{item.price}}</view>
+                            <view class="course course_period">/{{item.period}}</view>
                         </view>
                     </view>
-                </view>
-            </navigator>
+                </navigator>
+            </view>
+        </view>
+        <view class="course-content" wx:if="{{currentTab == 2}}">
+             <view class="course_info" wx:for="{{weClass}}" wx:id="{{item.id}}">
+                <navigator url="../items/detail/detail" hover-class="none">
+                    <view class="course_hd">
+                        <image src="{{item.images}}"></image>
+                    </view>
+                    <view class="dat">
+                        <view class="course_bd">
+                            <view class="course_bd_box">
+                                <image class="course_icon" src="../img/head.png"></image>
+                            </view>
+                            <view class="course_detail">{{item.detail}}</view>
+                        </view>
+                        <view class="course_ft">
+                            <view class="course course_price">{{item.price}}</view>
+                            <view class="course course_period">/{{item.period}}</view>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
         </view>
     </view>
 </view>
