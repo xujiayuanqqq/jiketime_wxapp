@@ -17,6 +17,7 @@ page {
 }
 input {
     font-size: 35rpx;
+    text-align: left;
 }
 .weui-cell .weui-cell__ft {
     overflow: hidden;

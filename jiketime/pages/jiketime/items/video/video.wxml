@@ -1,6 +1,6 @@
 <view class="container">
     <view class="head_video">
-        <video class="dplayer-video dplayer-video-current" src="blob:https://time.geekbang.org/229665d9-c2fe-4866-8345-11c8057fcece"></video>
+        <video class="dplayer-video dplayer-video-current" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video>
     </view>
     <view class="class_intr">
         <view class="up">
@@ -38,11 +38,6 @@
                 <view class="lesson_name">{{item.num}} | {{item.chapter}}</view>
                 <view class="watch">试看</view>
             </view>
-            <!-- <view class="video_play">
-                <image class="video_play_icon" src="../../img/play1.png"></image>
-                <view class="lesson_name">01 | Python语言的特点</view>
-                <view class="watch">试看</view>
-            </view> -->
         </view>
     </view>
     <view class="bottom ">

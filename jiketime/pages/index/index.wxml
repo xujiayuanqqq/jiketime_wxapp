@@ -1,174 +1,101 @@
 <view class="container">
+    <view class="swiper_page">
+        <swiper current="{{currentTab}}" bindchange="swiperTab" duration="1000">
+            <swiper-item>
+                <view class="pg">
+                    <view class="pg_img">
+                        <image class="pic" src="../image/spring.png"></image>
+                    </view>
+                    <view class="pg_hd">
+                        <view class="title">架构师</view>
+                    </view>
+                    <view class="pg_bd">
+                        <view class="instr">本期看点：Spring Boot 2.0 新特性解读</view>
+                    </view>
+                    <view class="pg_price">
+                        <view class="original_price">原价：￥9.9</view>
+                        <view class="button">免费领取</view>
+                    </view>
+                    <view class="pg_ft">
+                        <image class="user" src="../jiketime/img/head.png"></image>
+                        <view class="learn">7510 人与你共同学习</view>
+                    </view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+                <view class="pg">
+                    <view class="pg_img">
+                        <image class="pic" src="../image/wservice.png"></image>
+                    </view>
+                    <view class="pg_hd">
+                        <view class="title">架构师</view>
+                    </view>
+                    <view class="pg_bd">
+                        <view class="instr">本期看点：微服务架构技术栈选型</view>
+                    </view>
+                    <view class="pg_price">
+                        <view class="original_price">原价：￥9.9</view>
+                        <view class="button">免费领取</view>
+                    </view>
+                    <view class="pg_ft">
+                        <image class="user" src="../jiketime/img/head.png"></image>
+                        <view class="learn">10318 人与你共同学习</view>
+                    </view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+                <view class="pg">
+                    <view class="pg_imgteacher">
+                        <image class="pic" src="../image/teacher1.png"></image>
+                    </view>
+                    <view class="pg_teacher">
+                        <image class="user" src="../jiketime/img/head.png"></image>
+                        <view class="learn">2413 人与你共同学习</view>
+                    </view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+                <view class="pg">
+                    <view class="pg_imgteacher">
+                        <image class="pic" src="../image/teacher2.png"></image>
+                    </view>
+                    <view class="pg_teacher">
+                        <image class="user" src="../jiketime/img/head.png"></image>
+                        <view class="learn">2413 人与你共同学习</view>
+                    </view>
+                </view>
+            </swiper-item>
+            <swiper-item wx:for="{{pages}}" wx:key="id" bindtap="readMore">
+                <view class="pg">
+                    <view class="pg_image">
+                        <image class="pic" src="{{item.picture}}"></image>
+                    </view>
+                    <view class="pg_head">
+                        <view class="name">{{item.name}}</view>
+                        <view class="introduce">{{item.introduce}}</view>
+                    </view>
+                    <view class="delimiter"></view>
+                    <view class="pg_body">
+                        <view class="instr">{{item.instr}}</view>
+                        <view class="content">{{item.content}}</view>
+                    </view>
+                    <view class="pg_pr">
+                        <view class="price">{{item.price}}</view>
+                    </view>
+                    <view class="pg_ft last">
+                        <image class="user" src="../jiketime/img/head.png"></image>
+                        <view class="learn">{{item.learn}}</view>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
     <view class="swiper-tab">
         <view class="swiper-tab_item">
-            <view class="swiper-tab-item {{currentTab == index?'active':''}}" data-current="{{index}}">{{num}}</view>
+            <view class="swiper-tab-item {{currentTab == index?'active':''}}" data-current="{{index}}">
+                {{num}}
+            </view>
             <view class="total">/ 8</view>
         </view>
     </view>
-    <swiper current="{{currentTab}}" bindchange="swiperTab" duration="1000">
-
-        <swiper-item>
-            <view class="pg">
-                <view class="pg_img">
-                    <image class="pic" src="../image/spring.png"></image>
-                </view>
-                <view class="pg_hd">
-                    <view class="title">架构师</view>
-                </view>
-                <view class="pg_bd">
-                    <view class="instr">本期看点：Spring Boot 2.0 新特性解读</view>
-                </view>
-                <view class="pg_price">
-                    <view class="original_price">原价：￥9.9</view>
-                    <view class="button">免费领取</view>
-                </view>
-                <view class="pg_ft">
-                    <image class="user" src="../jiketime/img/head.png"></image>
-                    <view class="learn">7510 人与你共同学习</view>
-                </view>
-            </view>
-        </swiper-item>
-
-        <swiper-item>
-            <view class="pg">
-                <view class="pg_img">
-                    <image class="pic" src="../image/wservice.png"></image>
-                </view>
-                <view class="pg_hd">
-                    <view class="title">架构师</view>
-                </view>
-                <view class="pg_bd">
-                    <view class="instr">本期看点：微服务架构技术栈选型</view>
-                </view>
-                <view class="pg_price">
-                    <view class="original_price">原价：￥9.9</view>
-                    <view class="button">免费领取</view>
-                </view>
-                <view class="pg_ft">
-                    <image class="user" src="../jiketime/img/head.png"></image>
-                    <view class="learn">10318 人与你共同学习</view>
-                </view>
-            </view>
-        </swiper-item>
-
-        <swiper-item>
-            <view class="pg">
-                <view class="pg_imgteacher">
-                    <image class="pic" src="../image/teacher1.png"></image>
-                </view>
-                <view class="pg_teacher">
-                    <image class="user" src="../jiketime/img/head.png"></image>
-                    <view class="learn">2413 人与你共同学习</view>
-                </view>
-            </view>
-        </swiper-item>
-
-        <swiper-item>
-            <view class="pg">
-                <view class="pg_imgteacher">
-                    <image class="pic" src="../image/teacher2.png"></image>
-                </view>
-                <view class="pg_teacher">
-                    <image class="user" src="../jiketime/img/head.png"></image>
-                    <view class="learn">2413 人与你共同学习</view>
-                </view>
-            </view>
-        </swiper-item>
-
-        <swiper-item>
-            <view class="pg">
-                <view class="pg_image">
-                    <image class="pic" src="../image/avatar1.png"></image>
-                </view>
-                <view class="pg_head">
-                    <view class="name">王天一</view>
-                    <view class="introduce">工学博士，副教授</view>
-                </view>
-                <view class="delimiter"></view>
-                <view class="pg_body">
-                    <view class="instr">机器学习40讲</view>
-                    <view class="content">帮你打通机器学习的任督二脉</view>
-                </view>
-                <view class="pg_pr">
-                    <view class="price">￥45/40期</view>
-                </view>
-                <view class="pg_ft">
-                    <image class="user" src="../jiketime/img/head.png"></image>
-                    <view class="learn">7510 人与你共同学习</view>
-                </view>
-            </view>
-        </swiper-item>
-
-        <swiper-item>
-            <view class="pg">
-                <view class="pg_image">
-                    <image class="pic" src="../image/avatar1.png"></image>
-                </view>
-                <view class="pg_head">
-                    <view class="name">蔡能</view>
-                    <view class="introduce">原网易游戏引擎架构师，资深游...</view>
-                </view>
-                <view class="delimiter"></view>
-                <view class="pg_body">
-                    <view class="instr">从0开始学游戏开发</view>
-                    <view class="content">你的游戏开发入门第一课</view>
-                </view>
-                <view class="pg_pr">
-                    <view class="price">￥68/36期</view>
-                </view>
-                <view class="pg_ft">
-                    <image class="user" src="../jiketime/img/head.png"></image>
-                    <view class="learn">3157 人与你共同学习</view>
-                </view>
-            </view>
-        </swiper-item>
-
-        <swiper-item>
-            <view class="pg">
-                <view class="pg_image">
-                    <image class="pic" src="../image/avatar3.png"></image>
-                </view>
-                <view class="pg_head">
-                    <view class="name">杨晓峰</view>
-                    <view class="introduce">Oracle首席工程师</view>
-                </view>
-                <view class="delimiter"></view>
-                <view class="pg_body">
-                    <view class="instr">Java核心技术36讲</view>
-                    <view class="content">Oracle首席工程师带你修炼Java内功</view>
-                </view>
-                <view class="pg_pr">
-                    <view class="price">￥68/36期</view>
-                </view>
-                <view class="pg_ft">
-                    <image class="user" src="../jiketime/img/head.png"></image>
-                    <view class="learn">15756 人与你共同学习</view>
-                </view>
-            </view>
-        </swiper-item>
-
-        <swiper-item>
-            <view class="pg">
-                <view class="pg_image">
-                    <image class="pic" src="../image/avatar4.png"></image>
-                </view>
-                <view class="pg_head">
-                    <view class="name">李运华</view>
-                    <view class="introduce">资深技术专家</view>
-                </view>
-                <view class="delimiter"></view>
-                <view class="pg_body">
-                    <view class="instr">从0开始学架构</view>
-                    <view class="content">资深技术专家的实战架构心法</view>
-                </view>
-                <view class="pg_pr">
-                    <view class="price">￥99/50期</view>
-                </view>
-                <view class="pg_ft">
-                    <image class="user" src="../jiketime/img/head.png"></image>
-                    <view class="learn">20706 人与你共同学习</view>
-                </view>
-            </view>
-        </swiper-item>
-    </swiper>
 </view>

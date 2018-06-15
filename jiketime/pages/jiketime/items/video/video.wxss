@@ -165,13 +165,14 @@ page {
     margin-top: 15rpx;
 }
 .watch {
-    font-size: 26rpx;
+    font-size: 22rpx;
     width: 56rpx;
-    height: 38rpx;
+    height: 33rpx;
     color: #F5730A;
     border: 1px solid #F5730A;
-    margin-top: 16rpx;
+    margin-top: 20rpx;
     margin-right: 20rpx;
+    text-align: center;
 }
 .bottom {
     width: 100%;

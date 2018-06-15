@@ -1,21 +1,25 @@
 {
   "pages": [
-    "pages/jiketime/bindnum/bindnum",            
-    "pages/jiketime/user/user",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/jiketime/class/class",
+    "pages/jiketime/class/class",        
+    "pages/jiketime/user/user",
     "pages/jiketime/users/buy/buy",
-    "pages/jiketime/users/gift/gift",
+    "pages/jiketime/bindnum/bindnum",
     "pages/jiketime/users/collection/collection",
     "pages/jiketime/users/mesg/mesg",
-    "pages/jiketime/users/ticket/ticket"
+    "pages/jiketime/users/ticket/ticket",
+    "pages/jiketime/users/gift/gift",
+    "pages/jiketime/users/rule/rule",
+    "pages/jiketime/users/shop/shop",
+    "pages/jiketime/items/video/video",                
+    "pages/jiketime/items/detail/detail",
+    "pages/logs/logs"     
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#13CEBA",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "极客时间",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#b7b7b7",
