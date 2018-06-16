@@ -2,7 +2,7 @@
     <view class="swiper_page">
         <swiper current="{{currentTab}}" bindchange="swiperTab" duration="1000">
             <swiper-item>
-                <view class="pg">
+                <view class="pg" bindtap="goTo">
                     <view class="pg_img">
                         <image class="pic" src="../image/spring.png"></image>
                     </view>
@@ -23,7 +23,7 @@
                 </view>
             </swiper-item>
             <swiper-item>
-                <view class="pg">
+                <view class="pg" bindtap="goFor">
                     <view class="pg_img">
                         <image class="pic" src="../image/wservice.png"></image>
                     </view>
@@ -44,7 +44,7 @@
                 </view>
             </swiper-item>
             <swiper-item>
-                <view class="pg">
+                <view class="pg" bindtap="click">
                     <view class="pg_imgteacher">
                         <image class="pic" src="../image/teacher1.png"></image>
                     </view>
@@ -55,7 +55,7 @@
                 </view>
             </swiper-item>
             <swiper-item>
-                <view class="pg">
+                <view class="pg" bindtap="clickTo">
                     <view class="pg_imgteacher">
                         <image class="pic" src="../image/teacher2.png"></image>
                     </view>
@@ -65,7 +65,7 @@
                     </view>
                 </view>
             </swiper-item>
-            <swiper-item wx:for="{{pages}}" wx:key="id" bindtap="readMore">
+            <swiper-item wx:for="{{pages}}" wx:key="index" bindtap="readMore" data-index="{{index}}">
                 <view class="pg">
                     <view class="pg_image">
                         <image class="pic" src="{{item.picture}}"></image>
