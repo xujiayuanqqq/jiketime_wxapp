@@ -22,20 +22,20 @@ page {
     overflow: hidden;
 }
 .up {
-    width: 100%;
-    height: 80rpx;
-    display: flex;
+    width: 90%;
+    height: 60rpx;
+    margin-top: 20rpx;
 }
 .class_name {
     font-size: 34rpx;
-    margin-left: 20rpx;
-    margin-top: 24rpx;
+    padding: 30rpx;
+    padding-top: 24rpx;
 }
 .class_buy {
     font-size: 24rpx;
     color: #797877; 
-    margin-left: 320rpx;
-    margin-top: 30rpx;
+    float: right;
+    margin-top: 10rpx;
 }
 .under {
     width: 100%;
@@ -120,7 +120,7 @@ page {
 .author_avatar {
     width: 101rpx;
     height: 101rpx;
-    margin-top: 20rpx;
+    margin-top: 10rpx;
     margin-left: 50rpx;
 }
 .avatar {
@@ -136,7 +136,7 @@ page {
 }
 .author_name {
     font-size: 33rpx;
-    margin-top: 30rpx;
+    margin-top: 10rpx;
     margin-left: 10rpx;
 
 }

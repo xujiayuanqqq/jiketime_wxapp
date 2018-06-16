@@ -28,8 +28,8 @@ page {
 .author-avatar {
     width: 124rpx;
     height: 124rpx;
-    margin-top: 40rpx;
-    margin-left: 50rpx;
+    margin-top: 30rpx;
+    margin-left: 40rpx;
     overflow: hidden;
 }
 .avatar {
@@ -40,13 +40,13 @@ page {
 }
 .author-info {
     height: 100%;
-    width: 500rpx;
+    width: 550rpx;
     display: block;
     overflow: hidden;
     margin-left: 15rpx;
 }
 .up {
-    margin-top: 50rpx;
+    margin-top: 30rpx;
     overflow: hidden;
 
 }
@@ -56,7 +56,7 @@ page {
 .buy {
     font-size: 24rpx;
     color: #797877;
-    margin-left: 240rpx;
+    float: right;
 }
 .profession {
     font-size: 28rpx;

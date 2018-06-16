@@ -4,13 +4,13 @@
     </view>
     <view class="class_intr">
         <view class="up">
-            <text class="class_name">零基础学Python</text>
-            <text class="class_buy">3586人购买</text>
+            <text class="class_name">{{videopages.className}}</text>
+            <text class="class_buy">{{videopages.buy}}</text>
         </view>
         <view class="under">
             <image class="play" src="../../img/play.png"></image>
             <text class="class_lesson">视频课程</text>
-            <text class="class_date">每周上新</text>
+            <text class="class_date">{{videopages.date}}</text>
         </view>
     </view>
     <view class="class-tab-box ">
@@ -23,17 +23,18 @@
                 <text class="title">课程讲师</text>
                 <view class="author_person">
                     <view class="author_avatar">
-                        <image class="avatar" src="../../img/author.jpg"></image>
+                        <image class="avatar" src="{{videopages.avatar}}"></image>
                     </view>
                     <view class="right">
-                        <view class="author_name">尹会生</view>
-                        <view class="author_pro">金山软件西山居技术经理</view>
+                        <view class="author_name">{{videopages.authorName}}</view>
+                        <view class="author_pro">{{videopages.pro}}</view>
                     </view>
                 </view>
             </view>
         </view>
+        
         <view class="class-content " wx:if='{{currentTab == 1}}'>
-            <view class="video_play" wx:for="{{courseCatalog}}" wx:key="{{item.id}}">
+            <view class="video_play" wx:for="{{videopages.courseCatalog}}" wx:key="index">
                 <image class="video_play_icon" src="../../img/play1.png"></image>
                 <view class="lesson_name">{{item.num}} | {{item.chapter}}</view>
                 <view class="watch">试看</view>
@@ -44,19 +45,19 @@
         <view class="drop_down_item">
             <image class="share" src="../../img/share.png" bindtap="actionSheetTap"></image>
             <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
-                <block wx:for-items="{{actionSheetItems}}">
+                <block wx:for-items="{{videopages.actionSheetItems}}">
                     <action-sheet-item bindtap="bind{{item.bindtap}}">{{item.txt}}</action-sheet-item>
                 </block>
                 <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
             </action-sheet>
         </view>
         <view class="bottom-wrapper">
-            <view class="bottom-left-box">
-                <text class="subscribe">￥129 <text class="group">3人成团</text>
+            <view class="bottom-left-box" bindtap="clickInto">
+                <text class="subscribe">{{videopages.subscribe}} <text class="group">{{videopages.group}}</text>
                 </text>
             </view>
-            <view class="bottom-right-box">
-                <text class="origin_price">加入学习￥199</text>
+            <view class="bottom-right-box" bindtap="clickInto">
+                <text class="origin_price">{{videopages.price}}</text>
             </view>
         </view>
     </view>

@@ -28,8 +28,8 @@ page {
 .user-motto {
     width: 100%;
     font-family: serif;
-    font-size: 30rpx;
-    color:#2E4DF3;
+    font-size: 29rpx;
+    color: lightblue;
     text-align: center;
     margin-top: 20rpx;
 }
@@ -44,4 +44,7 @@ page {
     vertical-align: middle;
     width:50rpx;
     height: 50rpx;
+}
+.weui-cell__bd {
+    font-size: 30rpx;
 }

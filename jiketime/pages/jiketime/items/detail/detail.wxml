@@ -1,20 +1,20 @@
 <view class="container">
     <view class="detailPages">
         <view class="head_img">
-            <image class="learn" src="../../img/learn.jpg"></image>
+            <image class="learn" src="{{fullpage.images}}"></image>
         </view>
         <view class="column-main">
             <view class="author">
                 <view class="author-avatar">
-                    <image class="avatar" src="../../img/user1.jpg"></image>
+                    <image class="avatar" src="{{fullpage.avatar}}"></image>
                 </view>
                 <view class="author-info">
                     <view class="up">
-                        <text class="name">王天一</text>
-                        <text class="buy">2618人购买</text>
+                        <text class="name">{{fullpage.name}}</text>
+                        <text class="buy">{{fullpage.people}}</text>
                     </view>
                     <view class="under">
-                        <text class="profession">工学博士，副教授</text>
+                        <text class="profession">{{fullpage.profession}}</text>
                     </view>
                 </view>
             </view>
@@ -29,7 +29,7 @@
                 </view>
                 <view class="class-content" wx:if="{{currentTab == 0}}">数据太多，待更新</view>
                 <view class="class-content" wx:if="{{currentTab == 1}}">
-                    <view class="video_play" wx:for="{{courseCatalog}}" wx:key="{{item.id}}">
+                    <view class="video_play" wx:for="{{fullpage.courseCatalog}}" wx:key="{{item.id}}">
                         <view class="lesson_name">{{item.num}} | {{item.chapter}}</view>
                         <view class="watch">试看</view>
                     </view>
@@ -40,7 +40,7 @@
             <view class="drop_down_item">
                 <image class="share" src="../../img/share.png" bindtap="actionSheetTap"></image>
                 <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
-                    <block wx:for-items="{{actionSheetItems}}">
+                    <block wx:for-items="{{fullpage.actionSheetItems}}">
                         <action-sheet-item bindtap="bind{{item.bindtap}}">
                             {{item.txt}}
                         </action-sheet-item>
@@ -48,8 +48,8 @@
                     <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
                 </action-sheet>
             </view>
-            <view class="bottom-wrapper">
-                <text class="subscribe">订阅￥45</text>
+            <view class="bottom-wrapper" bindtap="clickInto">
+                <text class="subscribe">{{fullpage.subscribe}}</text>
             </view>
         </view>
     </view>

@@ -3,12 +3,8 @@ Page({
   data: {
     currentTab: 0,
     actionSheetHidden: true,
-    actionSheetItems: [
-      { bindtap: 'Menu1', txt: '分享给好友' },
-      { bindtap: 'Menu2', txt: '生成分享卡片' },
-    ],
+    fullpage: [],
     menu: '',
-    courseCatalog: []
   },
   clickTab: function (e) {
     var index = e.currentTarget.dataset.index
@@ -17,6 +13,7 @@ Page({
     });
   },
   actionSheetTap: function () {
+    console.log(this);
     this.setData({
       actionSheetHidden: !this.data.actionSheetHidden
     })
@@ -43,9 +40,16 @@ Page({
    */
   onLoad: function (options) {
     // console.log(app);
+    var fullpage = app.globalData.fullpage;
     this.setData({
-      courseCatalog: app.globalData.courseCatalog
+      fullpage: fullpage[decodeURIComponent(options.index)]
     })
   },
-
+  clickInto: function(e) {
+    wx.showToast({
+      title: "暂未开放",
+      icon: "none",
+      duration: 2000
+    })
+  }
 })
