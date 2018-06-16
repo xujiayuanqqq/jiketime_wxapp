@@ -12,66 +12,60 @@
             </view>
         </view>
         <view class="course-content" wx:if="{{currentTab == 0}}">
-            <view class="course_info" wx:for="{{chooseClass}}" wx:key="{{item.id}}">
-                <navigator url="../items/detail/detail" hover-class="none">
-                    <view class="course_hd">
-                        <image src="{{item.images}}"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">{{item.detail}}</view>
+            <view class="course_info" wx:for="{{chooseClass}}" wx:key="index" bindtap="learnMore" data-index="{{index}}">
+                <view class="course_hd">
+                    <image src="{{item.images}}"></image>
+                </view>
+                <view class="dat">
+                    <view class="course_bd">
+                        <view class="course_bd_box">
+                            <image class="course_icon" src="../img/head.png"></image>
                         </view>
-                        <view class="course_ft">
-                            <view class="course course_price">{{item.price}}</view>
-                            <view class="course course_period">/{{item.period}}</view>
-                        </view>
+                        <view class="course_detail">{{item.detail}}</view>
                     </view>
-                </navigator>
+                    <view class="course_ft">
+                        <view class="course course_price">{{item.price}}</view>
+                        <view class="course course_period">/{{item.period}}</view>
+                    </view>
+                </view>
             </view>
         </view>
         <view class="course-content" wx:if="{{currentTab == 1}}">
-            <view class="course_info" wx:for="{{videoClass}}" wx:id="{{item.id}}">
-                <navigator url="../items/video/video" hover-class="none">
-                    <view class="course_hd">
-                        <image src="{{item.images}}"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">{{item.detail}}</view>
+            <view class="course_info" wx:for="{{videoClass}}" wx:key="index" bindtap="watchMore" data-index="{{index}}">
+                <view class="course_hd">
+                    <image src="{{item.images}}"></image>
+                </view>
+                <view class="dat">
+                    <view class="course_bd">
+                        <view class="course_bd_box">
+                            <image class="course_icon" src="../img/head.png"></image>
                         </view>
-                        <view class="course_ft">
-                            <view class="course course_price">{{item.price}}</view>
-                            <view class="course course_period">/{{item.period}}</view>
-                        </view>
+                        <view class="course_detail">{{item.detail}}</view>
                     </view>
-                </navigator>
+                    <view class="course_ft">
+                        <view class="course course_price">{{item.price}}</view>
+                        <view class="course course_period">/{{item.period}}</view>
+                    </view>
+                </view>
             </view>
         </view>
         <view class="course-content" wx:if="{{currentTab == 2}}">
-             <view class="course_info" wx:for="{{weClass}}" wx:id="{{item.id}}">
-                <navigator url="../items/detail/detail" hover-class="none">
-                    <view class="course_hd">
-                        <image src="{{item.images}}"></image>
-                    </view>
-                    <view class="dat">
-                        <view class="course_bd">
-                            <view class="course_bd_box">
-                                <image class="course_icon" src="../img/head.png"></image>
-                            </view>
-                            <view class="course_detail">{{item.detail}}</view>
+            <view class="course_info" wx:for="{{weClass}}" wx:key="index" bindtap="readMore" data-index="{{index}}">
+                <view class="course_hd">
+                    <image src="{{item.images}}"></image>
+                </view>
+                <view class="dat">
+                    <view class="course_bd">
+                        <view class="course_bd_box">
+                            <image class="course_icon" src="../img/head.png"></image>
                         </view>
-                        <view class="course_ft">
-                            <view class="course course_price">{{item.price}}</view>
-                            <view class="course course_period">/{{item.period}}</view>
-                        </view>
+                        <view class="course_detail">{{item.detail}}</view>
                     </view>
-                </navigator>
+                    <view class="course_ft">
+                        <view class="course course_price">{{item.price}}</view>
+                        <view class="course course_period">/{{item.period}}</view>
+                    </view>
+                </view>
             </view>
         </view>
     </view>

@@ -17,6 +17,25 @@ Page({
       currentTab: index
     });
   },
+  learnMore: function(e) {
+    var index = e.currentTarget.dataset.index;
+    // console.log(index);
+    wx.navigateTo({
+      url: '../items/detail/detail?index=' + index,
+    })
+  },
+  watchMore: function(e) {
+    var index = e.currentTarget.dataset.index;    
+    wx.navigateTo({
+      url: '../items/video/video?index=' + index,
+    })
+  },
+  readMore: function(e) {
+    var index = e.currentTarget.dataset.index + 16;
+    wx.navigateTo({
+      url: '../items/detail/detail?index=' + index,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -34,32 +53,9 @@ Page({
    */
   onPullDownRefresh: function () {
     wx.request({
-      url: '',
-      data: {},
-      method: 'GET',
-      success: function(res) {
-
-      },
-      fail: function(res) {
-
-      },
       complete: function(res) {
         wx.stopPullDownRefresh();
       }
     })
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
   }
 })
