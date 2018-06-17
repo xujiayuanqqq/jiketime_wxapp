@@ -46,7 +46,9 @@ Page({
     // console.log(this);
     var videopages = app.globalData.videopages;
     this.setData({
-      videopages: videopages[decodeURIComponent(options.index)]
+      // videopages: videopages[decodeURIComponent(options.index)]
+      videopages: videopages[options.index]
+      
     })
   },
   clickInto: function(e) {

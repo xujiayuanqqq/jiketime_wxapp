@@ -42,7 +42,8 @@ Page({
     // console.log(app);
     var fullpage = app.globalData.fullpage;
     this.setData({
-      fullpage: fullpage[decodeURIComponent(options.index)]
+      // fullpage: fullpage[decodeURIComponent(options.index)]
+      fullpage: fullpage[options.index]      
     })
   },
   clickInto: function(e) {

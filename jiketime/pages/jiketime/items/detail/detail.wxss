@@ -104,9 +104,9 @@ page {
 }
 .lesson_name {
     width: 626rpx;
-    font-size: 30rpx;
+    font-size: 26rpx;
     margin-left: 50rpx;
-    margin-top: 15rpx;
+    margin-top: 10rpx;
 }
 .watch {
     font-size: 22rpx;
